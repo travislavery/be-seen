@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './index.css';
 import App from './App';
-import rootReducer from './App/reducers/index'
+import rootReducer from './App/reducers/reducers'
 
 const store = createStore(rootReducer, applyMiddleware(thunk))
 
