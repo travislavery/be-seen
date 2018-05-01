@@ -22,9 +22,11 @@ class SectionContainer extends Component{
 
 
 const mapStateToProps = (state) => {
-	return {
-		user: {}
-	}
+ const { loading, response } = state.postsByJsonPlaceholder.toJS()
+ return {
+    loading,
+    response
+ }
 }
 
-export default connect(mapStateToProps, {})(SectionContainer)
+export default connect(mapStateToProps, {})(SectionContainer);
